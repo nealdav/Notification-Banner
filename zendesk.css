@@ -1,15 +1,15 @@
-/*MW-Notificaiton Banner CSS */
-/* Common, default styles for the notification box */
+/* Zendesk Alert Banner CSS - Start */
 
 .ns-box {
-	background: rgba(192, 57, 43,0.85);
+	/* background: rgba(192, 57, 43,0.85); */
+	background: rgba(195, 29, 12, 0.85);
 	padding: 10px 20px 20px 20px;
 	line-height: 1.4;
 	z-index: 1000;
 	pointer-events: none;
 	color: rgba(250,251,255,0.95);
 	font-size: 85%;
-  border-bottom: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
 }
 
 .ns-box.ns-show {
@@ -18,7 +18,7 @@
 
 .ns-box a {
 	color: inherit;
-  opacity: 0.7;
+	opacity: 0.7;
 	font-weight: 700;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .ns-box p {
-    margin: 0;
+	margin: 0;
 }
 
 .ns-box.ns-show,
@@ -49,7 +49,7 @@
 	backface-visibility: hidden;
 }
 
-.ns-close:hover, 
+.ns-close:hover,
 .ns-close:focus {
 	outline: none;
 }
@@ -81,17 +81,17 @@
 }
 
 .ns-box-inner i {
-    color: #fff;
-    font-size: 3.8em;
+	color: #fff;
+	font-size: 3.8em;
 }
 
-.megaphone:before { 
-  content:'\1F4E3';
-  font-family: "entypo";
-  font-size: 2.2em;
+.megaphone:before {
+	content:'\1F4E3';
+	font-family: "entypo";
+	font-size: 2.2em;
 }
 
-/* To bar notifications */
+/* Top bar notifications */
 .ns-box.ns-bar {
 	top: 0;
 	left: 0;
@@ -100,7 +100,8 @@
 
 .ns-bar .ns-close {
 	background: transparent;
-	margin-top: 15px;
+	/* margin-top: 15px; */
+	margin-top: 30px;
 	right: 20px;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -164,34 +165,35 @@
 }
 
 .ns-effect-slidetop.ns-show p {
-	-webkit-animation-name: animFade;
-	animation-name: animFade;
+-webkit-animation-name: animFade;
+animation-name: animFade;
 }
 
 @-webkit-keyframes animScaleUp {
-	0% { opacity: 0; -webkit-transform: translate3d(0,-50%,0) scale3d(0,0,1); }
-	100% { opacity 1; -webkit-transform: translate3d(0,-50%,0) scale3d(1,1,1); }
+0% { opacity: 0; -webkit-transform: translate3d(0,-50%,0) scale3d(0,0,1); }
+100% { opacity: 1; -webkit-transform: translate3d(0,-50%,0) scale3d(1,1,1); }
 }
 
 @keyframes animScaleUp {
-	0% { opacity: 0; -webkit-transform: translate3d(0,-50%,0) scale3d(0,0,1); transform: translate3d(0,-50%,0) scale3d(0,0,1); }
-	100% { opacity 1; -webkit-transform: translate3d(0,-50%,0) scale3d(1,1,1); transform: translate3d(0,-50%,0) scale3d(1,1,1); }
+0% { opacity: 0; -webkit-transform: translate3d(0,-50%,0) scale3d(0,0,1); transform: translate3d(0,-50%,0) scale3d(0,0,1); }
+100% { opacity: 1; -webkit-transform: translate3d(0,-50%,0) scale3d(1,1,1); transform: translate3d(0,-50%,0) scale3d(1,1,1); }
 }
 
 .ns-effect-slidetop.ns-show,
 .ns-effect-slidetop.ns-hide {
-	-webkit-animation-name: animSlideTop;
-	animation-name: animSlideTop;
-	-webkit-animation-duration: 0.3s;
-	animation-duration: 0.3s;
+-webkit-animation-name: animSlideTop;
+animation-name: animSlideTop;
+-webkit-animation-duration: 0.3s;
+animation-duration: 0.3s;
 }
 
 @-webkit-keyframes animSlideTop {
-	0% { -webkit-transform: translate3d(0,-100%,0); }
-	100% { -webkit-transform: translate3d(0,0,0); }
+0% { -webkit-transform: translate3d(0,-100%,0); }
+100% { -webkit-transform: translate3d(0,0,0); }
 }
 
 @keyframes animSlideTop {
 	0% { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
 	100% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
 }
+/* Zendesk Alert Banner CSS - Stop */
